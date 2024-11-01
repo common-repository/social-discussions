@@ -1,0 +1,66 @@
+<style type="text/css">
+	.laecho_fs_below {
+		border-bottom:1px dotted #DCDCD8; 
+		padding:5px;
+		width:90%;
+	}
+	.laecho_fs_label {padding:5px 5px 0px 5px;}
+</style>
+<div id="laecho_fs_main">
+	
+		<div id="laecho_fs_urll">
+			<?php
+				$htmt_title='';
+				foreach($laecho_sd_fs_title as $key=>$value){
+					$html_title .= '<div class="laecho_fs_below"><label for="'.$value['option_name'].'">'.$value['field_name'].' </label>';
+					$html_title .= '<input type="text" id="'.$value['option_name'].'" name="'.$value['option_name'].'" value="'.${$key}.'" /></div>'; 
+				}
+				echo $html_title ;
+			?>
+			</div>
+		<div id="laecho_fs_url">
+			<?php
+			$html_url='';
+			foreach($laecho_options_follow_subscribe as $key=>$value){
+				if($value['field_type']=='checkbox'){
+					$html_url.='<div class="laecho_fs_label">'.${'icon_'.$value['field_icon']}.'&nbsp;'.$value['field_name'].'</div>';
+					$html_url.='<div class="laecho_fs_below"><input type="checkbox" checked="selected" disabled="disabled"/><span style="padding:3px;color:#555555;">This will be displayed by default.</span></div>';
+				}
+				else{
+					$html_url.='<div class="laecho_fs_label"><label for="'.$value['option_name'].'">'.${'icon_'.$value['field_icon']}.'&nbsp;'.$value['field_name'].'</label></div>';
+					$html_url.='<div class="laecho_fs_below"><input type="text" id="'.$value['option_name'].'" name="'.$value['option_name'].'" value="'.${$key}.'"/></div>';
+				}
+			}
+			echo $html_url;
+			?>
+		</div>
+		<div id="laecho_fs_color_size">
+			<?php
+			$html_size='';
+			foreach($laecho_options_fs_color as $key=>$value){
+				$html_size  .='<div class="laecho_fs_label"><label for="'.$value['option_name'].'">'.$value['field_name'].'</label></div>';
+				if($value['field_type']=='text') {
+					$html_size  .= '<div class="laecho_fs_below"><input style="float:left;width:70px;" type="text" name="'.$value[option_name].'" id="'.$value[option_name].'" value="'.${$key}.'"/>';
+					$html_size  .= '<div style="display:inline-block;border:1px solid #b1fafa;padding:3px;margin-left:2px;"><div id="'.$value[option_name].'_span_widget" class="laecho_fs_color_change" style="background:'.${$key}.';" >&nbsp;</div></div><div style="clear:both;"></div></div>';
+					$html_size 	.='<div style="clear:both;"></div>';
+				} else {
+					 if(array_key_exists('field_options', $value)){
+					 	$html_size .= '<div class="laecho_fs_below"><select id="'.$value['option_name'].'" name="'.$value['option_name'].'">';
+					 	foreach($value['field_options'] as $value) {
+							if($value == ${$key}) {
+								$html_size .= '<option value="'.$value.'" selected="selected">'.$value.'px</option>';	
+							} else {
+								$html_size .= '<option value="'.$value.'">'.$value.'px</option>';
+							}
+					 	}
+						$html_size .= '</select></div>';
+					 } else {      
+					 	$html_size .= '<div class="laecho_fs_below"><input style="width:50px" type="text" id="'.$value['option_name'].'" name="'.$value['option_name'].'" value="'.${$key}.'"/></div>';
+					 }
+				}			
+			 }
+			 echo $html_size;
+			?>
+		</div>
+	<input type="hidden" id="laecho_options_follow_subscribe_main" name="laecho_options_follow_subscribe_main" value="true"/>
+</div>		

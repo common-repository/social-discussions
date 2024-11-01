@@ -1,0 +1,1669 @@
+<input type="hidden" id="socialdiscussions_open_div" value="<?php echo $socialdiscussions_open_div; ?>" />
+<?php echo laechonw_disabled_check($laechonw_enable); ?>
+
+<!--Header-->
+<div style="margin:15px;">
+	<h1 style="font-weight: normal;">
+	    <a href="//www.linksalpha.com/widgets/buttons" style="margin:5px 0px 15px 0px"><img src="http://lh6.ggpht.com/SprYtx0e-yjBcPypdxY8wtMZ8H4d67gD4v--2PciiGtxhiL2ItdiirKMe6FDqRCRlFU6IIIt1beZgChYyZFI" style="vertical-align: middle;"/></a>
+	    <?php _e("Social Discussions"); ?>
+	</h1>
+</div>
+
+<div class="postbox laecho_postbox">
+	<div style="padding:5px;" class="laechonw_share_box">
+		<table style="width:100%;">
+			<tr>
+				<td class="laechonw_share_box_left">
+					<table>
+						<tr>
+							<td>
+								<div style="margin:0px 0px 0px 0px !important;" id="linksalpha_tag_325874951123" class="linksalpha-email-button" data-url="http://www.linksalpha.com" data-text="LinksAlpha - Making Social Easy" data-desc="LinksAlpha provides quick and easy way for companies and users to connect and share on social web. Using LinksAlpha tools, you can integrate Social Media Buttons into your website, Publish your Website Content Automatically to Social Media Sites, and Track Social Media Profiles, all from one place." data-site="http://www.linksalpha.com" data-image="http://www.linksalpha.com/images/LALOGO_s175.png" ></div>
+	                            <script type="text/javascript" src="http://www.linksalpha.com/social/loader?tag_id=linksalpha_tag_325874951123&link=http%3A%2F%2Fwww.linksalpha.com&halign=left&fblikeverb=like&fblikeref=linksalpha&fblikefont=arial&v=2&twitterw=110&facebookw=90&googleplus=1&facebook=1&twitter=1&linkedin=1&reddit=1&stumbleupon=1&pinterest=1&identica=1&yammer=1&gmail=1&yahoomail=1&hotmail=1&aolmail=1&mailru=1&email=1&print=1&digg=1&delicious=1&diigo=1&posterous=1&tumblr=1&myspace=1&evernote=1&instapaper=1&pocket=1&msn=1&livejournal=1&sonico=1&netlog=1&hyves=1&xing=1&vkontakte=1&weibo=1&button=googleplus%2Cfacebook%2Ctwitter%2Clinkedin&gpluslang=en-US&twitterlang=en&xinglang=en&fblikelang=en_US&twittermention=vivekpuri&twitterrelated1=linksalpha&twitterhash=linksalpha&twitterrelated=linksalpha&counters=googleplus%2Cfacebook%2Ctwitter%2Clinkedin"></script>									
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td align="right" style="padding-left:200px;" class="laechonw_share_box_right">
+					<span style="font-weight: bold;">Install Browser Extension&nbsp;</span>
+					<span><img src="//lh4.ggpht.com/RcHmTiAjiRPW5GSamTaet1etjiNYaeHVT2yOtEsJDEs9IRWTdt1P64zpDmh6XzAbN4HH9byl9YhgTK_NbcXq=s16" style="vertical-align: text-bottom" />&nbsp;<a target="_blank" href="https://chrome.google.com/webstore/detail/ffifmkcjncgmnnmkedgkiabklmjdmpgi">Chrome</a></span>
+					<span><img src="//lh5.ggpht.com/HE6TEsIgCGZgRKAZJ8SI1Yq7rGGxy5s_TQhleiphoEY2QFye1OlFRm8r_6JmGq4OUfHq07OE2dk6XeHWcYyU=s16" style="vertical-align: text-bottom" />&nbsp;<a href="http://www.linksalpha.com/downloads/app?id=980907126">Firefox</a></span>
+					<span><img src="//lh6.ggpht.com/4FQoS1Pn8OQOlahH5ESbjJv8iuVPV2If34-fABfBWcrJLUja5wiyLgWAekHWEuk_WaZg_iU9bf4Jli07WDQrRQ=s16" style="vertical-align: text-bottom" />&nbsp;<a href="http://www.linksalpha.com/downloads/app?id=980926069">Safari</a></span>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<!--Network Publisher-->
+<div class="postbox laecho_postbox">
+	    <div class="laecho_holder"><?php _e("Auto Publish on Social Networks"); ?></div>
+	    <div class="laecho_inside">
+	        <table>
+	            <tr>
+	                <td class="laecho_inside_first">
+	                    <a class="social_discussions_header_link social_discussions_header_link_networkpub social_discussions_header_edit" id="social_discussions_header_link_networkpub"><?php _e("Edit"); ?><input type="hidden" value="edit" /></a>
+	                    <a class="social_discussions_header_link social_discussions_header_link_networkpub social_discussions_header_hide"><?php _e("Hide"); ?><input type="hidden" value="hide" /></a>            
+	                </td>
+	                <td class="laecho_inside_second">|</td>
+	                <td>
+	                    <?php _e("Automatically publish your content on 20+ Social Networks including Twitter, Facebook, LinkedIn..."); ?>            
+	                </td>
+	            </tr>
+	        </table>
+	    </div>
+	    <!--Content-->
+	    <div class="social_discussions_header_content">
+	        <div class="social_discussions_options_box">
+	            <div id="networkpub_msg"></div>
+	            <div class="laecho_notice_msg">
+	                <span><a style="font-size: 13px;" href="http://www.linksalpha.com/account/your_api_key" target="_blank"><?php _e("Click here"); ?></a> <?php _e("to get API Keys for your Social Networks."); ?></span>
+	                <span><?php _e("Also, checkout the"); ?> <a style="font-size: 13px;" href="http://help.linksalpha.com/networks/getting-started" target="_blank"><?php _e("Getting Started"); ?></a> <?php _e("help document at"); ?> <a style="font-size: 13px;" href="http://www.linksalpha.com" target="_blank">LinksAlpha.com</a>.</span>
+	            </div>
+	            <div>
+	                <form action="" method="post" id="networkpubadd" name="networkpubadd">
+	                    <fieldset class="socialdiscussions_fieldset">
+	                        <legend><?php _e("Add API Key"); ?></legend>
+	                        <table style="width:100%;">
+	                            <tr>
+	                                <td>
+	                                    <?php _e("Enter your"); ?> <a href="http://www.linksalpha.com/account/your_api_key" target="_blank"><?php _e("User API Key"); ?></a> <?php _e("or"); ?> <a target="_blank" href="http://www.linksalpha.com/networks"><?php _e("Network API Key"); ?></a>
+	                                </td>
+	                            </tr>
+	                            <tr>
+	                                <td>
+	                                    <div style="padding-bottom:10px;padding-top: 3px;">
+	                                        <input style="width:400px;" class="widefat" id="<?php echo $laechonw_field_name ?>" name="<?php echo $laechonw_field_name ?>" type="text" />
+	                                    </div>
+	                                </td>
+	                            </tr>
+	                        </table>
+	                    </fieldset>
+	                    <div>
+	                        <table class="social_discussions_networkpub_add_key_submit">
+	                            <tr>
+	                                <td class="social_discussions_networkpub_add_key_submit_button">
+	                                    <input type="hidden" name="laecho_networkpub_added"     value="<?php echo $networkpub_added; ?>"        id="laecho_networkpub_added" />
+	                                    <input type="submit" name="AddAPIKey"                   value="<?php _e('Add API Key'); ?>"             class="button-primary" />
+	                                </td>
+	                                <td class="social_discussions_networkpub_add_key_submit_social">
+	                                    <div style="margin:0px 0px 0px 0px !important;" id="linksalpha_tag_32587491" class="linksalpha-email-button" data-url="http://www.linksalpha.com" data-text="LinksAlpha - Making Social Easy" data-desc="LinksAlpha provides quick and easy way for companies and users to connect and share on social web. Using LinksAlpha tools, you can integrate Social Media Buttons into your website, Publish your Website Content Automatically to Social Media Sites, and Track Social Media Profiles, all from one place." data-site="http://www.linksalpha.com" data-image="http://www.linksalpha.com/images/LALOGO_s175.png" ></div>
+	                                 	<div class="linksalpha-email-button" id="linksalpha_tag_772122780" data-url="http://www.linksalpha.com" data-text="LinksAlpha - Making Social Media Easy!" data-desc="LinksAlpha provides quick and easy way for companies and users to connect and share on social web. Using LinksAlpha tools, you can integrate Social Media Buttons into your website, Publish your Website Content Automatically to Social Media Sites, and Track Social Media Profiles, all from one place." data-image="http://www.linksalpha.com/images/LALOGO_s175.png"></div>
+										<script type="text/javascript" src="http://www.linksalpha.com/social/loader?tag_id=linksalpha_tag_772122780&fblikefont=arial&vkontakte=1&livejournal=1&twitter=1&xinglang=de&linkedin=1&tumblr=1&hyves=1&fblikelang=en_US&delicious=1&twitterw=110&gpluslang=en-US&gmail=1&weibo=1&posterous=1&xing=1&sonico=1&twitterlang=en&pinterest=1&myspace=1&msn=1&print=1&mailru=1&email=1&counters=googleplus%2Cfacebook%2Ctwitter&reddit=1&hotmail=1&netlog=1&twitterrelated=linksalpha&aolmail=1&link=http%3A%2F%2Fwww.linksalpha.com&diigo=1&evernote=1&digg=1&yahoomail=1&yammer=1&stumbleupon=1&instapaper=1&facebookw=90&googleplus=1&fblikeverb=like&fblikeref=linksalpha&halign=left&v=2&facebook=1&button=googleplus%2Cfacebook%2Ctwitter&identica=1"></script>
+	                                </td>
+	                            </tr>
+	                        </table>
+	                    </div>
+	                </form>
+	            </div>
+				<!-- Currently Publishing -->
+	            <div class="laecho_nw_content_box">
+	                <div class="laecho_nw_content_box_header">
+	                	<?php _e("Currently Publishing"); ?>
+	                </div>
+	                <div class="laecho_nw_content_box_data" id="idAPIBox">
+	                    <?php echo $laechonw_networks_published; ?>
+	                </div>
+	            </div>
+				<!-- Show Hide Auth Error -->
+	            <div class="laecho_nw_content_box">
+	                <div class="laecho_nw_content_box_header">
+	                   <?php _e("Show/Hide Authorization Errors"); ?>
+	                </div>
+	                <div class="laecho_nw_content_box_data">
+	                    <form action="" method="post">
+	                        <div>
+	                            <input type="checkbox" id="laechonw_auth_error_show" name="laechonw_auth_error_show" <?php echo $laechonw_auth_error_show; ?> />
+	                            <label for="laechonw_auth_error_show">&nbsp;&nbsp;<?php _e("Check this box to show error message in WordPress Admin Console in case there are Authorization Errors with any of your social network profiles."); ?> <a target="_blank" href="http://help.linksalpha.com/networks/authorization-error"><?php _e("Click Here"); ?></a> <?php _e("to learn more."); ?></label>
+	                        </div>
+	                        <div style="padding-top:5px;">
+	                        	<input type="hidden" name="laechonw_form_type" 				value="laechonw_auth_error_show" />
+	                            <input type="hidden" name="laechonw_auth_error_show_form" 	value="true" />
+	                            <input type="submit" name="submit" class="button-primary lanetworkpuboptions" value="<?php _e("Update"); ?>" />
+	                        </div>
+	                    </form>
+	                </div>
+	            </div>
+	            <!-- Enable Disable Publishing -->
+				<div class="laecho_nw_content_box">
+					<div class="laecho_nw_content_box_header">
+						<?php _e("Enable/Disable Publishing")?>
+					</div>
+					<div class="laecho_nw_content_box_data">
+						<form action="" method="post">
+							<div>
+								<input type="checkbox" id="laechonw_enable" name="laechonw_enable" <?php echo $laechonw_enable ?> />
+								<label for="laechonw_enable" >&nbsp;&nbsp;<?php _e('Check this box to enable publishing') ?></label>
+							</div>
+							<div style="padding-top:5px;">
+								<input type="hidden" name="laechonw_form_type" 		value="laechonw_enable" />
+								<input type="hidden" name="laechonw_enable_form" 	value="true" />
+								<input type="submit" name="submit" class="button-primary lanetworkpuboptions" value="<?php _e('Update')?>" />
+							</div>
+						</form>
+					</div>
+					<div class="laecho_nw_content_box_data" style="margin-top:-25px;">
+						<div><?php _e('Notes:')?></div>
+						<ol>
+							<li>'<?php _e('You should typically use this option when you are making mass updates to your posts to prevent them from getting published to the configured networks')?></li>
+							<li><?php _e('Deactivating the plugin will not disable publishing. You need to use this checkbox to disable publishing')?></li>
+						</ol>
+					</div>
+				</div>
+				<!-- Show/Hide Mixed Mode Configuration Alert -->
+	            <div class="laecho_nw_content_box">
+	                <div class="laecho_nw_content_box_header">
+	                    <?php _e("Show/Hide Mixed Mode Configuration Alert"); ?>
+	                </div>
+	                <div class="laecho_nw_content_box_data">
+	                    <form action="" method="post">
+	                        <div>
+	                            <input type="checkbox" id="laechonw_mixed_mode_alert_show" name="laechonw_mixed_mode_alert_show" <?php echo $laechonw_mixed_mode_alert_show; ?> />
+	                            <label for="laechonw_mixed_mode_alert_show">&nbsp;&nbsp;<?php _e("Check this box to show alert if Mixed Mode configuration is detected."); ?> <a target="_blank" href="http://help.linksalpha.com/wordpress-plugin-network-publisher/mixed-mode-alert"><?php _e("Click Here"); ?></a> <?php _e("to learn more."); ?></label>
+	                        </div>
+	                        <div style="padding-top:5px;">
+	                            <input type="hidden" name="laechonw_form_type" 						value="laechonw_mixed_mode_alert_show" />
+	                            <input type="hidden" name="laechonw_mixed_mode_alert_show_form" 	value="true" />
+	                            <input type="submit" name="submit" class="button-primary lanetworkpuboptions" value="<?php _e("Update"); ?>" />
+	                        </div>
+	                    </form>
+	                </div>
+	            </div>
+				<!-- Post Types -->
+				<div class="laecho_nw_content_box">
+					<div class="laecho_nw_content_box_header">
+						<?php _e("Post Types o Publish"); ?>
+					</div>
+					<div class="laecho_nw_content_box_data"  name="setting_networkpub_post_types" id="setting_networkpub_post_types">
+						<div>
+							<form action="" method="post">
+								<div style="padding:0px 0px 10px 0px;">
+	                            <?php _e('Select the WordPress '); ?> <a href="http://codex.wordpress.org/Post_Types" target="_blank"> <?php _e('Post Types'); ?> </a> <?php _e(' that you want to Publish to your Social Network profiles.'); ?></a>
+	                            </div>
+	                            <div style="padding:0px 0px 10px 0px;"><?php echo laechonw_post_types(); ?></div>
+								<div>
+									<input type="hidden" name="laechonw_form_type" 			value="laechonw_post_types" />
+									<input type="hidden" name="laechonw_post_types_form" 	value="true" />
+									<input type="submit" name="submit" class="button-primary lanetworkpuboptions" value="<?php _e('Update'); ?>" />
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- Show/Hide install extension alert -->
+				<div class="laecho_nw_content_box">
+				    <div class="laecho_nw_content_box_header">
+				        <?php _e("Show/Hide message to Install Browser Extension"); ?>
+				    </div>
+				    <div class="laecho_nw_content_box_data">
+				        <form action="" method="post">
+				            <div>
+				                <input type="checkbox" id="laechonw_install_extension_alert_show" name="laechonw_install_extension_alert_show" <?php echo $laechonw_install_extension_alert_show ?>> <label for="laechonw_install_extension_alert_show">&nbsp;&nbsp;<?php _e("Check this box to show the message in Social Discussions widget to install browser extension from LinksAlpha.com"); ?> <a target="_blank" href="http://www.linksalpha.com/downloads"><?php _e("Click Here"); ?></a> <?php _e("to learn more."); ?></label>
+				            </div>
+				            <div style="padding-top:5px;">
+				                <input type="hidden" name="laechonw_form_type" value="laechonw_install_extension_alert_show" />
+				               	<input type="hidden" name="laechonw_install_extension_alert_show_form" 	value="true" />
+	                            <input type="submit" name="submit" class="button-primary lanetworkpuboptions" value="<?php _e("Update"); ?>" />
+
+				            </div>
+				        </form>
+				    </div>
+				</div>
+				<!-- Note -->
+	            <div class="laecho_nw_content_box_last">
+	                <div class="laecho_nw_content_box_header">
+	                    <?php _e("Note"); ?>
+	                </div>
+	                <div class="laecho_nw_content_box_data">
+	                    <?php _e("If you decide to stop using this functionality permanently, please remove your blog from"); ?>&nbsp;<a href="https://www.linksalpha.com/websites" target="_blank"><?php _e("LinksAlpha Website Manager"); ?></a>. <?php _e("Otherwise, your blog posts may continue to get posted even after you do not use this plugin. For Support, open ticket at"); ?>&nbsp;<a target="_blank" href="http://support.linksalpha.com">LinksAlpha Help Desk</a>.
+	                </div>
+	            </div>
+	            <br />
+	        </div>
+	    </div>
+	</div>
+
+<!--Select Social Buttons-->
+<div class="postbox laecho_postbox">
+    <form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
+        <div class="laecho_holder"><?php _e("Social Buttons"); ?></div>
+        <div class="laecho_inside">
+            <table>
+                <tr>
+                    <td class="laecho_inside_first">
+                        <a class="social_discussions_header_link social_discussions_header_link_all social_discussions_header_edit"><?php _e("Edit"); ?><input type="hidden" value="edit" /></a>
+                        <a class="social_discussions_header_link social_discussions_header_link_all social_discussions_header_hide" id="select_social_buttons"><?php _e("Hide"); ?><input type="hidden" value="hide" /></a>            
+                    </td>
+                    <td class="laecho_inside_second">|</td>
+                    <td>
+                        <?php _e("Select Social Buttons that you want to show on your website."); ?>            
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="social_discussions_header_content">
+            <div class="social_discussions_options_box" id="social_discussions_widget_box_container">
+                <fieldset class="socialdiscussions_fieldset" id="laecho_style_selector_bg">
+                    <legend style="font-weight: bold;"><?php _e("Select Style"); ?></legend>
+                    <!--Select Style-->
+                    <div class="social_discussions_options_box">
+                        <div class="social_discussions_sub_options">
+                            <div class="laecho_buttons_style_options_buttons_box">
+                                <table class="laecho_buttons_style_options_buttons">
+                                	<tr>
+                                		<th class="laecho_buttons_style_options_buttons_style">Style*</th>
+                                		<th class="laecho_buttons_style_options_buttons_show">Show Style</th>
+                                		<th class="laecho_buttons_style_options_buttons_buttons">&nbsp;</th>
+                                	</tr>
+                                    <tr>
+                                        <td class="laecho_buttons_style_options_buttons_style">
+                                            <input type="radio" name="social_buttons_select_style" id="laecho_buttons_buttons_with_counters_style" checked />
+                                        </td>
+                                        <td class="laecho_buttons_style_options_buttons_show"> 
+                                        	<input  name="laecho-html-withcntr-display"  type="checkbox"<?php if($laecho_opt_withcntr_display == 1) echo 'checked="checked"'; ?> value="1" />&nbsp;
+                                        </td>
+                                        <td>
+                                            <div style="margin:0px 0px 0px 0px !important;" id="linksalpha_tag_325874951" class="linksalpha-email-button" data-url="http://www.linksalpha.com" data-text="LinksAlpha - Making Social Easy" data-desc="LinksAlpha provides quick and easy way for companies and users to connect and share on social web. Using LinksAlpha tools, you can integrate Social Media Buttons into your website, Publish your Website Content Automatically to Social Media Sites, and Track Social Media Profiles, all from one place." data-site="http://www.linksalpha.com" data-image="http://www.linksalpha.com/images/LALOGO_s175.png" ></div>
+                                            <script type="text/javascript" src="http://www.linksalpha.com/social/loader?tag_id=linksalpha_tag_325874951&link=http%3A%2F%2Fwww.linksalpha.com&halign=left&fblikeverb=like&fblikeref=linksalpha&fblikefont=arial&v=2&twitterw=110&facebookw=90&googleplus=1&facebook=1&twitter=1&linkedin=1&reddit=1&stumbleupon=1&pinterest=1&identica=1&yammer=1&gmail=1&yahoomail=1&hotmail=1&aolmail=1&mailru=1&email=1&print=1&digg=1&delicious=1&diigo=1&posterous=1&tumblr=1&myspace=1&evernote=1&instapaper=1&pocket=1&msn=1&livejournal=1&sonico=1&netlog=1&hyves=1&xing=1&vkontakte=1&weibo=1&button=googleplus%2Cfacebook%2Ctwitter%2Clinkedin&gpluslang=en-US&twitterlang=en&xinglang=en&fblikelang=en_US&twittermention=vivekpuri&twitterrelated1=linksalpha&twitterhash=linksalpha&twitterrelated=linksalpha&counters=googleplus%2Cfacebook%2Ctwitter%2Clinkedin"></script>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="laecho_buttons_style_options_buttons_style">
+                                            <input type="radio" name="social_buttons_select_style" id="laecho_buttons_buttons_style" />
+                                        </td>
+										<td class="laecho_buttons_style_options_buttons_show"> 
+                                        	<input name="laecho-html-cntr-display"  type="checkbox"<?php if($laecho_opt_cntr_display == 1) echo 'checked="checked"'; ?> value="1" />&nbsp;
+                                        </td>                                        
+                                        <td>
+                                            <div style="margin:0px 0px 0px 0px !important;" id="linksalpha_tag_332798010" class="linksalpha-email-button" data-url="http://www.linksalpha.com" data-text="LinksAlpha - Making Social Easy" data-desc="LinksAlpha provides quick and easy way for companies and users to connect and share on social web. Using LinksAlpha tools, you can integrate Social Media Buttons into your website, Publish your Website Content Automatically to Social Media Sites, and Track Social Media Profiles, all from one place." data-site="http://www.linksalpha.com" data-image="http://www.linksalpha.com/images/LALOGO_s175.png" ></div>
+                                            <script type="text/javascript" src="http://www.linksalpha.com/social/loader?tag_id=linksalpha_tag_332798010&link=http%3A%2F%2Fwww.linksalpha.com&halign=left&v=2&twitterw=55&googleplus=1&twitter=1&linkedin=1&reddit=1&stumbleupon=1&pinterest=1&identica=1&yammer=1&gmail=1&yahoomail=1&hotmail=1&aolmail=1&mailru=1&email=1&print=1&digg=1&delicious=1&diigo=1&posterous=1&tumblr=1&myspace=1&evernote=1&instapaper=1&pocket=1&msn=1&livejournal=1&sonico=1&netlog=1&hyves=1&xing=1&vkontakte=1&weibo=1&button=googleplus%2Ctwitter%2Clinkedin%2Creddit%2Cstumbleupon%2Cpinterest%2Ctumblr&gpluslang=en-US&fbsendlang=en_US&twitterlang=en&xinglang=en&twittermention=vivekpuri&twitterrelated1=linksalpha&twitterhash=linksalpha&twitterrelated=linksalpha"></script>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="laecho_buttons_style_options_buttons_style">
+                                            <input type="radio" name="social_buttons_select_style" id="laecho_buttons_icons_style" />
+                                        </td>
+                                        <td class="laecho_buttons_style_options_buttons_show">
+                                        	<input name="laecho-html-icons-display"  type="checkbox"<?php if($laecho_opt_icons_display == 1) echo 'checked="checked"'; ?> value="1" />&nbsp;
+                                        </td>
+                                        <td>
+                                            <div style="margin:0px 0px 0px 0px !important;" id="linksalpha_tag_641607457" class="linksalpha-email-button" data-url="http://www.linksalpha.com" data-text="LinksAlpha - Making Social Easy" data-desc="LinksAlpha provides quick and easy way for companies and users to connect and share on social web. Using LinksAlpha tools, you can integrate Social Media Buttons into your website, Publish your Website Content Automatically to Social Media Sites, and Track Social Media Profiles, all from one place." data-site="http://www.linksalpha.com" data-image="http://www.linksalpha.com/images/LALOGO_s175.png" ></div>
+                                            <script src="http://www.linksalpha.com/social/loader_icons?tag_id=linksalpha_tag_641607457&link=http%3A%2F%2Fwww.linksalpha.com&fontstyle=trebuchet+ms&prepend=&prepends=14&prependc=6f6f6f&size=24&googleplus=1&facebook=1&twitter=1&linkedin=1&stumbleupon=1&pinterest=1&email=1&reddit=1&digg=1&delicious=1&diigo=1&evernote=1&posterous=1&tumblr=1&myspace=1&instapaper=1&pocket=1&msn=1&livejournal=1&yammer=1&identica=1&yahoomail=1&gmail=1&hotmail=1&aolmail=1&sonico=1&netlog=1&vkontakte=1&hyves=1&xing=1&mailru=1&weibo=1&print=1&page=googleplus%2Cfacebook%2Ctwitter%2Clinkedin%2Cstumbleupon%2Cpinterest%2Cemail%2Creddit%2Cdigg%2Cdelicious&popup=diigo%2Cevernote%2Cposterous%2Ctumblr%2Cmyspace%2Cinstapaper%2Cpocket%2Cmsn%2Clivejournal%2Cyammer%2Cidentica%2Cyahoomail%2Cgmail%2Chotmail%2Caolmail%2Csonico%2Cnetlog%2Cvkontakte%2Chyves%2Cxing%2Cmailru%2Cweibo%2Cprint&gpluslang=en-US&twitterlang=en&fblikelang=en_US&twittermention=vivekpuri&twitterhash=test&twitterrelated=linksalpha%2Cvivekpuri" type="text/javascript"></script>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="laecho_buttons_style_options_buttons_style">
+                                            <input type="radio" name="social_buttons_select_style" id="laecho_buttons_icon_style" />
+                                        </td>
+                                        <td class="laecho_buttons_style_options_buttons_show">
+                                        	<input name="laecho-html-icon-display"  type="checkbox"<?php if($laecho_opt_icon_display == 1) echo 'checked="checked"'; ?> value="1" />&nbsp;
+                                        </td>
+                                        <td>
+                                            <div style="margin:0px 0px 0px 0px !important;" id="linksalpha_tag_64160745711" class="linksalpha-email-button" data-url="http://www.linksalpha.com" data-text="LinksAlpha - Making Social Easy" data-desc="LinksAlpha provides quick and easy way for companies and users to connect and share on social web. Using LinksAlpha tools, you can integrate Social Media Buttons into your website, Publish your Website Content Automatically to Social Media Sites, and Track Social Media Profiles, all from one place." data-site="http://www.linksalpha.com" data-image="http://www.linksalpha.com/images/LALOGO_s175.png" ></div>
+                                            <script src="http://www.linksalpha.com/social/loader_icon?tag_id=linksalpha_tag_64160745711&link=http%3A%2F%2Fwww.linksalpha.com&fontstyle=trebuchet+ms&prepend=&prepends=14&prependc=6f6f6f&size=24&googleplus=1&facebook=1&twitter=1&linkedin=1&stumbleupon=1&pinterest=1&email=1&reddit=1&digg=1&delicious=1&diigo=1&evernote=1&posterous=1&tumblr=1&myspace=1&instapaper=1&pocket=1&msn=1&livejournal=1&yammer=1&identica=1&yahoomail=1&gmail=1&hotmail=1&aolmail=1&sonico=1&netlog=1&vkontakte=1&hyves=1&xing=1&mailru=1&weibo=1&print=1&page=googleplus%2Cfacebook%2Ctwitter%2Clinkedin%2Cstumbleupon%2Cpinterest%2Cemail%2Creddit%2Cdigg%2Cdelicious&popup=diigo%2Cevernote%2Cposterous%2Ctumblr%2Cmyspace%2Cinstapaper%2Cpocket%2Cmsn%2Clivejournal%2Cyammer%2Cidentica%2Cyahoomail%2Cgmail%2Chotmail%2Caolmail%2Csonico%2Cnetlog%2Cvkontakte%2Chyves%2Cxing%2Cmailru%2Cweibo%2Cprint&gpluslang=en-US&twitterlang=en&fblikelang=en_US&twittermention=vivekpuri&twitterhash=test&twitterrelated=linksalpha%2Cvivekpuri" type="text/javascript"></script>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="laecho_buttons_style_options_helper">* Change Style to view options for that particular Style</div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <!--Buttons with Counters-->
+            <div id="laecho_buttons_buttons_with_counters_style_options" class="laecho_buttons_style_options">
+               
+                <!--Buttons-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Select Buttons"); ?></legend>
+                        <!--Select Buttons-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><?php _e("Select Buttons to display"); ?></div>
+                            <div class="social_discussions_sub_options">
+                                <div class="laecho_buttons_style_options_buttons_box">
+                                    <table class="laecho_sub_options_table">
+                                        <tr>
+                                            <th><?php _e("Network"); ?></th>
+                                            <th><?php _e("Display"); ?></th>
+                                            <th><?php _e("Button/In-Popup"); ?></th>
+                                        </tr>
+                                        <?php
+                                            foreach($laecho_buttons_buttons_with_counters as $key=>$val) {
+                                                if($val['fieldset'] == 'buttons_to_display') {
+                                                    if(${$key} == 1) {
+                                                        $checked_status = 'checked="checked"';
+                                                    } else {
+                                                        $checked_status = '';
+                                                    }
+                                                    if(${$key.'_display'} == 'button') {
+                                                        $display_button = 'selected';
+                                                        $display_popup = '';
+                                                    } else {
+                                                        $display_button = '';
+                                                        $display_popup = 'selected';
+                                                    }
+                                                    $display_options = '';
+                                                    foreach($val['display_options'] as $option=>$name) {
+                                                        $display_options .= '<option value="'.$option.'" '.${'display_'.$option}.'>'.$name.'</option>';
+                                                    }
+                                                    echo   '<tr>
+                                                                <td>
+                                                                    <label for="'.$val['option_name'].'">&nbsp;&nbsp;'.${'icon_'.$val['param_name']}.'&nbsp;&nbsp;'.$val['field_name'].'</label>
+                                                                </td>
+                                                                <td class="laecho_sub_options_table_center">
+                                                                    <input name="'.$val['option_name'].'" id="'.$val['option_name'].'" type="checkbox" value="1" '.$checked_status.' />
+                                                                </td>
+                                                                <td class="laecho_sub_options_table_center">
+                                                                    <select name="'.$val['option_name'].'-display">
+                                                                        '.$display_options.'
+                                                                    </select>
+                                                                </td>
+                                                            </tr>';
+                                                }
+                                            }
+                                        ?>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <!--Location-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Location"); ?></legend>
+                        <!--Widget Location-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><?php _e("Buttons Location"); ?></div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" class="social_discussions_radio" name="laecho-html-widget-counters-location" id="laecho-html-widget-counters-location_before" value="before" <?php checked('before', $laecho_opt_widget_counters_location); ?> />&nbsp;
+                                        </td>
+                                        <td>
+                                            <label for="laecho-html-widget-counters-location_before"><?php _e("Before Content (default)"); ?></label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" class="social_discussions_radio" name="laecho-html-widget-counters-location" id="laecho-html-widget-counters-location_after" value="after"  <?php checked('after',  $laecho_opt_widget_counters_location); ?> />&nbsp;
+                                        </td>
+                                        <td>
+                                            <label for="laecho-html-widget-counters-location_after"><?php _e("After Content"); ?></label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!--Relative Position-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><?php _e("Relative Position"); ?></div>
+                            <div class="social_discussions_sub_options">
+                                <?php
+                                    foreach($laecho_buttons_buttons_with_counters as $key=>$val) {
+                                        if($val['fieldset'] == 'margin') {
+                                            echo   '<div>
+                                                        <table>
+                                                            <tr>
+                                                                <td>
+                                                                    <input name="'.$val['option_name'].'" id="'.$val['option_name'].'" type="text" size="3" value="'.${$key}.'" />
+                                                                </td>
+                                                                <td>
+                                                                    <label for="'.$val['option_name'].'">&nbsp;&nbsp;'.$val['field_name'].'</label>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>';
+                                        }
+                                    }
+                                ?>
+                            </div>
+                        </div>
+                        <!--Align-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><label for="laecho-html-withcntr-align"><?php _e("Buttons Alignment"); ?></label><br /></div>
+                            <div>
+                                <select name="laecho-html-withcntr-align" id="laecho-html-withcntr-align">
+                                    <option <?php if($laecho_opt_withcntr_align == 'center') echo "selected"; ?> value="center"><?php _e("Center"); ?></option>
+                                    <option <?php if($laecho_opt_withcntr_align == 'left') echo "selected"; ?> value="left"><?php _e("Left"); ?></option>
+                                </select>
+                            </div>
+                        </div>
+                     </fieldset>
+                </div>
+                <!--Facebook Like-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Facebook Like Options"); ?></legend>
+                        <!--Facebook Like button text-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><label for="laecho-html-withcntr-facebooklike-verb"><?php _e("Button text"); ?></label><br /></div>
+                            <div>
+                                <select name="laecho-html-withcntr-facebooklike-verb" id="laecho-html-withcntr-facebooklike-verb">
+                                    <option <?php if($laecho_opt_withcntr_facebooklike_verb == 'like') echo "selected"; ?> value="like"><?php _e("Like"); ?></option>
+                                    <option <?php if($laecho_opt_withcntr_facebooklike_verb == 'recommend') echo "selected"; ?> value="recommend"><?php _e("Recommend"); ?></option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--Facebook Like button ref-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><label for="laecho-html-withcntr-facebooklike-ref"><?php _e("Button referral tracking label"); ?></label><br /></div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input name="laecho-html-withcntr-facebooklike-ref" id="laecho-html-withcntr-facebooklike-ref" type="text" size="15" value="<?php echo $laecho_opt_withcntr_facebooklike_ref; ?>" ></input>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <?php _e("Max 50 characters and can contain alphanumeric characters and some punctuation (currently +/=-.:_)"); ?>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!--Font style-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><label for="laecho-html-withcntr-facebooklike-font"><?php _e("Font Style"); ?></label><br /></div>
+                            <div>
+                                <select name="laecho-html-withcntr-facebooklike-font" id="laecho-html-withcntr-facebooklike-font">
+                                    <option <?php if($laecho_opt_withcntr_facebooklike_font == 'arial') echo "selected"; ?> value="arial"><?php _e("arial"); ?></option>
+                                    <option <?php if($laecho_opt_withcntr_facebooklike_font == 'lucida grande') echo "selected"; ?> value="lucida grande"><?php _e("lucida grande"); ?></option>
+                                    <option <?php if($laecho_opt_withcntr_facebooklike_font == 'segoe ui') echo "selected"; ?> value="segoe ui"><?php _e("segoe ui"); ?></option>
+                                    <option <?php if($laecho_opt_withcntr_facebooklike_font == 'tahoma') echo "selected"; ?> value="tahoma"><?php _e("tahoma"); ?></option>
+                                    <option <?php if($laecho_opt_withcntr_facebooklike_font == 'trebuchet ms') echo "selected"; ?> value="trebuchet ms"><?php _e("trebuchet ms"); ?></option>
+                                    <option <?php if($laecho_opt_withcntr_facebooklike_font == 'verdana') echo "selected"; ?> value="verdana"><?php _e("verdana"); ?></option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--Facebook Like button width-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><label for="laecho-html-withcntr-facebooklike-width"><?php _e("Button Width"); ?></label><br /></div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input name="laecho-html-withcntr-facebooklike-width" id="laecho-html-withcntr-facebooklike-width" type="text" size="2" value="<?php echo $laecho_opt_withcntr_facebooklike_width; ?>" ></input>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <!--Twitter-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Twitter Button Options"); ?></legend>
+                        <!--Twitter Button width-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><label for="laecho-html-withcntr-twitter-width"><?php _e("Button Width"); ?></label><br /></div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input name="laecho-html-withcntr-twitter-width" id="laecho-html-withcntr-twitter-width" type="text" size="2" value="<?php echo $laecho_opt_withcntr_twitter_width; ?>" ></input>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+               <!--Manual Placement-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Manual Placement"); ?></legend>
+                        <!--Manual Position message-->
+                        <div class="social_discussions_options_box">
+                            <?php _e("For Manual Position of Widget: Place the code"); ?> <?php highlight_string("<?php laecho_wp_filter_content_widget(); ?>");?>
+                            <?php _e("in one of the files single.php or index.php - depending on the theme you are using. These files can be found under directory ...\wordpress\wp-content\themes\\"); ?>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <!--Buttons without Counters-->
+            <div id="laecho_buttons_buttons_style_options" class="laecho_buttons_style_options">
+                
+                <!--Buttons-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Select Buttons"); ?></legend>
+                        <!--Select Buttons-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><?php _e("Select Buttons to display"); ?></div>
+                            <div class="social_discussions_sub_options">
+                                <div class="laecho_buttons_style_options_buttons_box">
+                                    <table class="laecho_sub_options_table">
+                                        <tr>
+                                            <th><?php _e("Network"); ?></th>
+                                            <th><?php _e("Display"); ?></th>
+                                            <th><?php _e("Button/In-Popup"); ?></th>
+                                        </tr>
+                                        <?php
+                                            foreach($laecho_buttons_buttons as $key=>$val) {
+                                                if($val['fieldset'] == 'buttons_to_display') {
+                                                    if(${$key} == 1) {
+                                                        $checked_status = 'checked="checked"';
+                                                    } else {
+                                                        $checked_status = '';
+                                                    }
+                                                    if(${$key.'_display'} == 'button') {
+                                                        $display_button = 'selected';
+                                                        $display_popup = '';
+                                                    } else {
+                                                        $display_button = '';
+                                                        $display_popup = 'selected';
+                                                    }
+                                                    $display_options = '';
+                                                    foreach($val['display_options'] as $option=>$name) {
+                                                        $display_options .= '<option value="'.$option.'" '.${'display_'.$option}.'>'.$name.'</option>';
+                                                    }
+                                                    echo   '<tr>
+                                                                <td>
+                                                                    <label for="'.$val['option_name'].'">&nbsp;&nbsp;'.${'icon_'.$val['param_name']}.'&nbsp;&nbsp;'.$val['field_name'].'</label>
+                                                                </td>
+                                                                <td class="laecho_sub_options_table_center">
+                                                                    <input name="'.$val['option_name'].'" id="'.$val['option_name'].'" type="checkbox" value="1" '.$checked_status.' />
+                                                                </td>
+                                                                <td class="laecho_sub_options_table_center">
+                                                                    <select name="'.$val['option_name'].'-display">
+                                                                        '.$display_options.'
+                                                                    </select>
+                                                                </td>
+                                                            </tr>';
+                                                }
+                                            }
+                                        ?>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <!--Location-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Location"); ?></legend>
+                        <!--Location-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><?php _e("Location"); ?></div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" class="social_discussions_radio" name="laecho-html-counters-location" id="laecho-html-counters-location_before" value="before" <?php checked('before', $laecho_opt_counters_location); ?> />
+                                        </td>
+                                        <td>
+                                            <label for="laecho-html-counters-location_before">&nbsp;<?php _e("Before Content"); ?></label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" class="social_discussions_radio" name="laecho-html-counters-location" id="laecho-html-counters-location_after" value="after"  <?php checked('after',  $laecho_opt_counters_location); ?> >
+                                        </td>
+                                        <td>
+                                            <label for="laecho-html-counters-location_after">&nbsp;<?php _e("After Content (default)"); ?></label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!--Align-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><label for="laecho-html-cntr-align"><?php _e("Align Buttons"); ?></label><br /></div>
+                            <div>
+                                <select name="laecho-html-cntr-align" id="laecho-html-cntr-align">
+                                    <option <?php if($laecho_opt_cntr_align == 'center') echo "selected"; ?> value="center"><?php _e("Center"); ?></option>
+                                    <option <?php if($laecho_opt_cntr_align == 'left') echo "selected"; ?> value="left"><?php _e("Left"); ?></option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--Relative Position-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><?php _e("Relative Position"); ?></div>
+                            <div class="social_discussions_sub_options">
+                                <?php
+                                    foreach($laecho_buttons_buttons as $key=>$val) {
+                                        if($val['fieldset'] == 'margin') {
+                                            echo   '<div>
+                                                        <table>
+                                                            <tr>
+                                                                <td>
+                                                                    <input name="'.$val['option_name'].'" id="'.$val['option_name'].'" type="text" size="3" value="'.${$key}.'" />
+                                                                </td>
+                                                                <td>
+                                                                    <label for="'.$val['option_name'].'">&nbsp;&nbsp;'.$val['field_name'].'</label>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>';
+                                        }
+                                    }
+                                ?>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <!--Twitter-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Twitter Button Options"); ?></legend>
+                        <!--Twitter Button width-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><label for="laecho-html-cntr-twitter-width"><?php _e("Button Width"); ?></label><br /></div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input name="laecho-html-cntr-twitter-width" id="laecho-html-cntr-twitter-width" type="text" size="2" value="<?php echo $laecho_opt_cntr_twitter_width; ?>" ></input>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <!--Manual Placement-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Manual Placement"); ?></legend>
+                        <div class="social_discussions_options_box">
+                            <?php _e("Manual Option: Place the code"); ?> <?php highlight_string("<?php laecho_wp_filter_content(); ?>");?>
+                            <?php _e("in one of the files single.php or index.php - depending on the theme you are using. These files can be found under directory ...\wordpress\wp-content\themes\\"); ?>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <!--Buttons - Icons-->
+            <div id="laecho_buttons_icons_style_options" class="laecho_buttons_style_options">
+               
+                <!--Buttons-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Select Buttons"); ?></legend>
+                        <!--Select Buttons-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><?php _e("Select Buttons to display"); ?></div>
+                            <div class="social_discussions_sub_options">
+                                <div>
+                                    <table class="laecho_sub_options_table">
+                                        <tr>
+                                            <th><?php _e("Network"); ?></th>
+                                            <th><?php _e("Display"); ?></th>
+                                            <th><?php _e("On Page/Popup"); ?></th>
+                                        </tr>
+                                        <?php
+                                            foreach($laecho_buttons_icons as $key=>$val) {
+                                                if($val['fieldset'] == 'buttons_to_display') {
+                                                    if(${$key} == 1) {
+                                                        $checked_status = 'checked="checked"';
+                                                    } else {
+                                                        $checked_status = '';
+                                                    }
+                                                    if(${$key.'_display'} == 'page') {
+                                                        $display_page = 'selected';
+                                                        $display_popup = '';
+                                                    } else {
+                                                        $display_page = '';
+                                                        $display_popup = 'selected';
+                                                    }
+                                                    echo   '<tr>
+                                                                <td>
+                                                                    <label for="'.$val['option_name'].'">&nbsp;&nbsp;'.${'icon_'.$val['param_name']}.'&nbsp;&nbsp;'.$val['field_name'].'</label>
+                                                                </td>
+                                                                <td class="laecho_sub_options_table_center">
+                                                                    <input name="'.$val['option_name'].'" id="'.$val['option_name'].'" type="checkbox" value="1" '.$checked_status.' />
+                                                                </td>
+                                                                <td class="laecho_sub_options_table_center">
+                                                                    <select name="'.$val['option_name'].'-display" id="'.$val['option_name'].'-display">
+                                                                        <option value="page"    '.$display_page.'>'.__("Page").'</option>
+                                                                        <option value="popup"   '.$display_popup.'>'.__("Popup").'</option>
+                                                                    </select>
+                                                                </td>
+                                                            </tr>';
+                                                }
+                                            }
+                                        ?>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <!--Button Size-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Button Size"); ?></legend>
+                        <!--Font style-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><label for="laecho-html-icons-size"><?php _e("Size of the buttons to display"); ?></label><br /></div>
+                            <div>
+                                <select name="laecho-html-icons-size" id="laecho-html-icons-size">
+                                    <option <?php if($laecho_opt_icons_size == 16) echo "selected"; ?> value="16"><?php _e("16px"); ?></option>
+                                    <option <?php if($laecho_opt_icons_size == 24) echo "selected"; ?> value="24"><?php _e("24px"); ?></option>
+                                    <option <?php if($laecho_opt_icons_size == 32) echo "selected"; ?> value="32"><?php _e("32px"); ?></option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <!--Positioning-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Positioning"); ?></legend>
+                        <!--Location-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><?php _e("Location"); ?></div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" class="social_discussions_radio" name="laecho-html-icons-location" id="laecho-html-icons-location_before" value="before" <?php checked('before', $laecho_opt_icons_location); ?> />
+                                        </td>
+                                        <td>
+                                            <label for="laecho-html-icons-location_before">&nbsp;<?php _e("Before Content"); ?></label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" class="social_discussions_radio" name="laecho-html-icons-location" id="laecho-html-icons-location_after" value="after"  <?php checked('after',  $laecho_opt_icons_location); ?> >
+                                        </td>
+                                        <td>
+                                            <label for="laecho-html-icons-location_after">&nbsp;<?php _e("After Content (default)"); ?></label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!--Relative Position-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><?php _e("Relative Position"); ?></div>
+                            <div class="social_discussions_sub_options">
+                                <?php
+                                    foreach($laecho_buttons_icons as $key=>$val) {
+                                        if($val['fieldset'] == 'margin') {
+                                            echo   '<div>
+                                                        <table>
+                                                            <tr>
+                                                                <td>
+                                                                    <input name="'.$val['option_name'].'" id="'.$val['option_name'].'" type="text" size="3" value="'.${$key}.'" />
+                                                                </td>
+                                                                <td>
+                                                                    <label for="'.$val['option_name'].'">&nbsp;&nbsp;'.$val['field_name'].'</label>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>';
+                                        }
+                                    }
+                                ?>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <!--Font Style-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Font Style"); ?></legend>
+                        <!--Font style-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><label for="laecho-html-icons-font"><?php _e("Font Style for the button"); ?></label><br /></div>
+                            <div>
+                                <select name="laecho-html-icons-font" id="laecho-html-icons-font">
+                                    <option <?php if($laecho_opt_icons_font == 'arial') echo "selected"; ?> value="arial"><?php _e("arial"); ?></option>
+                                    <option <?php if($laecho_opt_icons_font == 'lucida grande') echo "selected"; ?> value="lucida grande"><?php _e("lucida grande"); ?></option>
+                                    <option <?php if($laecho_opt_icons_font == 'segoe ui') echo "selected"; ?> value="segoe ui"><?php _e("segoe ui"); ?></option>
+                                    <option <?php if($laecho_opt_icons_font == 'tahoma') echo "selected"; ?> value="tahoma"><?php _e("tahoma"); ?></option>
+                                    <option <?php if($laecho_opt_icons_font == 'trebuchet ms') echo "selected"; ?> value="trebuchet ms"><?php _e("trebuchet ms"); ?></option>
+                                    <option <?php if($laecho_opt_icons_font == 'verdana') echo "selected"; ?> value="verdana"><?php _e("verdana"); ?></option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <!--Prepend-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Prepend Text"); ?></legend>
+                        <?php
+                            foreach($laecho_buttons_icons as $key=>$val) {
+                                if($val['fieldset'] == 'prependtext') {
+                                    echo   '<div class="social_discussions_options_box">
+                                                <div class="social_discussions_sub_header_bold"><label for="'.$val['option_name'].'">'.$val['field_name'].'</label><br /></div>
+                                                <div>
+                                                    <input name="'.$val['option_name'].'" id="'.$val['option_name'].'" type="text" size="'.$val['field_size'].'" value="'.${$key}.'" />
+                                                </div>
+                                            </div>';
+                                }
+                            }
+                        ?>
+                    </fieldset>
+                </div>  
+                <!--Manual Placement-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Manual Placement"); ?></legend>
+                        <div class="social_discussions_options_box">
+                            <?php _e("Manual Option: Place the code"); ?> <?php highlight_string("<?php laecho_wp_filter_buttons_icons(); ?>");?>
+                            <?php _e("in one of the files single.php or index.php - depending on the theme you are using. These files can be found under directory ...\wordpress\wp-content\themes\\"); ?>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <!--Buttons - Icon-->
+            <div id="laecho_buttons_icon_style_options" class="laecho_buttons_style_options">
+               <!--Buttons-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Select Buttons"); ?></legend>
+                        <!--Select Buttons-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><?php _e("Select Buttons to display"); ?></div>
+                            <div class="social_discussions_sub_options">
+                                <div class="laecho_buttons_style_options_buttons_box">
+                                    <table class="laecho_sub_options_table_2">
+                                        <tr>
+                                            <th><?php _e("Network"); ?></th>
+                                            <th><?php _e("Display"); ?></th>
+                                        </tr>
+                                        <?php
+                                            foreach($laecho_buttons_icon as $key=>$val) {
+                                                if($val['fieldset'] == 'buttons_to_display') {
+                                                    if(${$key} == 1) {
+                                                        $checked_status = 'checked="checked"';
+                                                    } else {
+                                                        $checked_status = '';
+                                                    }
+                                                    echo   '<tr>
+                                                                <td>
+                                                                    <label for="'.$val['option_name'].'">&nbsp;&nbsp;'.${'icon_'.$val['param_name']}.'&nbsp;&nbsp;'.$val['field_name'].'</label>
+                                                                </td>
+                                                                <td class="laecho_sub_options_table_center">
+                                                                    <input name="'.$val['option_name'].'" id="'.$val['option_name'].'" type="checkbox" value="1" '.$checked_status.' />
+                                                                </td>
+                                                            </tr>';
+                                                }
+                                            }
+                                        ?>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <!--Positioning-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Positioning"); ?></legend>
+                        <!--Location-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><?php _e("Location"); ?></div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" class="social_discussions_radio" name="laecho-html-icon-location" id="laecho-html-icon-location_before" value="before" <?php checked('before', $laecho_opt_icon_location); ?> />
+                                        </td>
+                                        <td>
+                                            <label for="laecho-html-icon-location_before">&nbsp;<?php _e("Before Content"); ?></label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" class="social_discussions_radio" name="laecho-html-icon-location" id="laecho-html-icon-location_after" value="after"  <?php checked('after',  $laecho_opt_icon_location); ?> >
+                                        </td>
+                                        <td>
+                                            <label for="laecho-html-icon-location_after">&nbsp;<?php _e("After Content (default)"); ?></label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!--Inline-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><label for="laecho-html-icon-display-inline"><?php _e("Show Button Inline"); ?></label><br /></div>
+                            <div>
+                                <select name="laecho-html-icon-display-inline" id="laecho-html-icon-display-inline">
+                                    <option <?php if($laecho_opt_icon_display_inline === 0) echo "selected"; ?> value="0"><?php _e("No"); ?></option>
+                                    <option <?php if($laecho_opt_icon_display_inline === 1) echo "selected"; ?> value="1"><?php _e("Yes"); ?></option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--Relative Position-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><?php _e("Relative Position"); ?></div>
+                            <div class="social_discussions_sub_options">
+                                <?php
+                                    foreach($laecho_buttons_icon as $key=>$val) {
+                                        if($val['fieldset'] == 'margin') {
+                                            echo   '<div class="'.$val['field_class'].'">
+                                                        <table>
+                                                            <tr>
+                                                                <td>
+                                                                    <input name="'.$val['option_name'].'" id="'.$val['option_name'].'" type="text" size="3" value="'.${$key}.'" />
+                                                                </td>
+                                                                <td>
+                                                                    <label for="'.$val['option_name'].'">&nbsp;&nbsp;'.$val['field_name'].'</label>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>';
+                                        }
+                                    }
+                                ?>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <!--Font Style-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Font Style"); ?></legend>
+                        <!--Font style-->
+                        <div class="social_discussions_options_box">
+                            <div class="social_discussions_sub_header_bold"><label for="laecho-html-icon-font"><?php _e("Font Style for the button"); ?></label><br /></div>
+                            <div>
+                                <select name="laecho-html-icon-font" id="laecho-html-icon-font">
+                                    <option <?php if($laecho_opt_icon_font == 'arial') echo "selected"; ?> value="arial"><?php _e("arial"); ?></option>
+                                    <option <?php if($laecho_opt_icon_font == 'lucida grande') echo "selected"; ?> value="lucida grande"><?php _e("lucida grande"); ?></option>
+                                    <option <?php if($laecho_opt_icon_font == 'segoe ui') echo "selected"; ?> value="segoe ui"><?php _e("segoe ui"); ?></option>
+                                    <option <?php if($laecho_opt_icon_font == 'tahoma') echo "selected"; ?> value="tahoma"><?php _e("tahoma"); ?></option>
+                                    <option <?php if($laecho_opt_icon_font == 'trebuchet ms') echo "selected"; ?> value="trebuchet ms"><?php _e("trebuchet ms"); ?></option>
+                                    <option <?php if($laecho_opt_icon_font == 'verdana') echo "selected"; ?> value="verdana"><?php _e("verdana"); ?></option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <!--Manual Placement-->
+                <div class="social_discussions_options_box">
+                    <fieldset class="socialdiscussions_fieldset">
+                        <legend><?php _e("Manual Placement"); ?></legend>
+                        <div class="social_discussions_options_box">
+                            <?php _e("Manual Option: Place the code"); ?> <?php highlight_string("<?php laecho_wp_filter_buttons_icon(); ?>");?>
+                            <?php _e("in one of the files single.php or index.php - depending on the theme you are using. These files can be found under directory ...\wordpress\wp-content\themes\\"); ?>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <!--Save button-->
+            <div class="social_discussions_options_box_save">
+                <input type="hidden" name="laecho-html-withcntr-version" value="2" />
+                <input type="hidden" name="laecho-html-cntr-version" value="2" />
+                <input type="hidden" name="laecho_buttons_buttons_with_counters" value="true" />
+                <input type="hidden" name="laecho_buttons_buttons" id="laecho_buttons_buttons" value="true" />
+                <input type="hidden" name="laecho_buttons_icon" value="true" />
+                <input type="hidden" name="laecho_buttons_icons" value="true" />
+                <input type="submit" name="option_value" class="button-primary" value="<?php _e('Save Changes'); ?>" />
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--Buttons Languages-->
+<div class="postbox laecho_postbox">
+    <form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
+        <input type="hidden" name="laecho_options_language" id="laecho_options_language" value="true" />
+        <div class="laecho_holder"><?php _e("Social Buttons Languages"); ?></div>
+        <div class="laecho_inside">
+            <table>
+                <tr>
+                    <td class="laecho_inside_first">
+                        <a class="social_discussions_header_link social_discussions_header_link_all social_discussions_header_edit"><?php _e("Edit"); ?><input type="hidden" value="edit" /></a>
+                        <a class="social_discussions_header_link social_discussions_header_link_all social_discussions_header_hide" id="social_buttons_languages"><?php _e("Hide"); ?><input type="hidden" value="hide" /></a>            
+                    </td>
+                    <td class="laecho_inside_second">|</td>
+                    <td>
+                        <?php _e("Set language in which the Social Buttons will show up."); ?>            
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="social_discussions_header_content">
+            <div class="social_discussions_options_box">
+                <fieldset class="socialdiscussions_fieldset">
+                    <legend><?php _e("Options"); ?></legend>
+                    <!--Google Plus-->
+                    <div class="social_discussions_options_box">
+                        <div class="social_discussions_sub_options">
+                            <div class="social_discussions_sub_header_bold"><label for="laecho-html-widget-lang-googleplus"><?php _e("Google Plus"); ?></label><br /></div>
+                            <select name="laecho-html-widget-lang-googleplus" id="laecho-html-widget-lang-googleplus">
+                                <?php
+                                    $langs = laecho_googleplus_langs();
+                                    asort($langs);
+                                    foreach($langs as $key=>$val) {
+                                        if($laecho_opt_lang_googleplus == $key) {
+                                            echo '<option value="'.htmlentities($key).'" selected>'.htmlentities($val).'</option>';
+                                        } else{
+                                            echo '<option value="'.htmlentities($key).'">'.htmlentities($val).'</option>';
+                                        }
+                                    }
+                                ?>
+                            </select>
+                        </div>
+                    </div>
+                    <!--Facebook Like-->
+                    <div class="social_discussions_options_box">
+                        <div class="social_discussions_sub_options">
+                            <div class="social_discussions_sub_header_bold"><label for="laecho-html-widget-lang-facebooklike"><?php _e("Facebook Like"); ?></label><br /></div>
+                            <select name="laecho-html-widget-lang-facebooklike" id="laecho-html-widget-lang-facebooklike">
+                                <?php
+                                    $langs = laecho_fb_langs();
+                                    asort($langs);
+                                    foreach($langs as $key=>$val) {
+                                        if($laecho_opt_lang_facebooklike == $key) {
+                                            echo '<option value="'.htmlentities($key).'" selected>'.htmlentities($val).'</option>';
+                                        } else{
+                                            echo '<option value="'.htmlentities($key).'">'.htmlentities($val).'</option>';
+                                        }
+                                    }
+                                ?>
+                            </select>
+                        </div>
+                    </div>
+                    <!--Twitter-->
+                    <div class="social_discussions_options_box">
+                        <div class="social_discussions_sub_options">
+                            <div class="social_discussions_sub_header_bold"><label for="laecho-html-widget-lang-twitter"><?php _e("Twitter"); ?></label><br /></div>
+                            <select name="laecho-html-widget-lang-twitter" id="laecho-html-widget-lang-twitter">
+                                <?php
+                                    $langs = laecho_twitter_langs();
+                                    asort($langs);
+                                    foreach($langs as $key=>$val) {
+                                        if($laecho_opt_lang_twitter == $key) {
+                                            echo '<option value="'.htmlentities($key).'" selected>'.htmlentities($val).'</option>';
+                                        } else{
+                                            echo '<option value="'.htmlentities($key).'">'.htmlentities($val).'</option>';
+                                        }
+                                    }
+                                ?>
+                            </select>
+                        </div>
+                    </div>
+                    <!--Xing-->
+                    <?php
+                        foreach($laecho_options_language as $key=>$val) {
+                            if($key != 'laecho_opt_lang_xing') {
+                                continue;
+                            }
+                            $helper = '';
+                            if(!empty($val['field_helper'])) {
+                                $helper = '<div class="laecho_field_helper">'.$val['field_helper'].'</div>';
+                            }
+                            if(!empty($val['field_options'])) {
+                                $field_html  = '<select name="'.$val['option_name'].'" id="'.$val['option_name'].'">';
+                                foreach($val['field_options'] as $field_value=>$field_name) {
+                                    if(${$key} == $field_value) {
+                                        $selected_option = 'selected';
+                                    } else {
+                                        $selected_option = '';
+                                    }
+                                    $field_html .= '<option '.$selected_option.' value="'.$field_value.'">'. $field_name .'</option>';
+                                }
+                                $field_html .= '</select>';
+                            } else {
+                                $field_html = '<input name="'.$val['option_name'].'" id="'.$val['option_name'].'" type="text" size="'.$val['field_size'].'" value="'.${$key}.'" />';
+                            }
+                            echo   '<div class="social_discussions_options_box">
+                                        <div class="social_discussions_sub_header_bold"><label for="'.$val['option_name'].'">'.$val['field_name'].'</label><br /></div>
+                                        <div>
+                                            '. $field_html .'
+                                        </div>
+                                        '.$helper.'
+                                    </div>';
+                        }
+                    ?>
+                </fieldset>
+            </div>
+            <!--Save button-->
+            <div class="social_discussions_options_box_save">
+                <input type="submit" name="option_value" class="button-primary" value="<?php _e('Save Changes'); ?>" />
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--Facebook-->
+<div class="postbox laecho_postbox">
+    <form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
+        <div class="laecho_holder"><?php _e("Facebook Options"); ?></div>
+        <div class="laecho_inside">
+            <table>
+                <tr>
+                    <td class="laecho_inside_first">
+                        <a class="social_discussions_header_link social_discussions_header_link_all social_discussions_header_edit"><?php _e("Edit"); ?><input type="hidden" value="edit" /></a>
+                        <a class="social_discussions_header_link social_discussions_header_link_all social_discussions_header_hide" id="social_buttons_facebook_options"><?php _e("Hide"); ?><input type="hidden" value="hide" /></a>            
+                    </td>
+                    <td class="laecho_inside_second">|</td>
+                    <td>
+                        <?php _e("Set Facebook specific options."); ?>            
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="social_discussions_header_content">
+            <div class="social_discussions_options_box">
+                <fieldset class="socialdiscussions_fieldset">
+                    <legend><?php _e("Options"); ?></legend>
+                    <?php
+                        foreach($laecho_options_facebook as $key=>$val) {
+                            $helper = '';
+                            if(!empty($val['field_helper'])) {
+								if($val['field_type'] == 'checkbox') {
+                                	$helper = '<div class="laecho_field_helper_inline">&nbsp;'.$val['field_helper'].'</div>';
+								} else {
+									$helper = '<div class="laecho_field_helper">'.$val['field_helper'].'</div>';
+								}
+                            }
+                            if($val['field_type'] == 'select') {
+                                $field_html  = '<select name="'.$val['option_name'].'" id="'.$val['option_name'].'">';
+                                foreach($val['field_options'] as $field_value=>$field_name) {
+                                    if(${$key} == $field_value) {
+                                        $selected_option = 'selected';
+                                    } else {
+                                        $selected_option = '';
+                                    }
+                                    $field_html .= '<option '.$selected_option.' value="'.$field_value.'">'. $field_name .'</option>';
+                                }
+                                $field_html .= '</select>';
+                            } elseif($val['field_type'] == 'checkbox') {
+								if(${$key} == 1) {
+									$checked_status = 'checked="checked"';
+								} else {
+                                	$checked_status = '';
+                                }
+                                $field_html = '<input name="'.$val['option_name'].'" id="'.$val['option_name'].'" type="'.$val['field_type'].'" size="'.$val['field_size'].'" value="1" '.$checked_status.' />';
+                            } else {
+								$field_html = '<input name="'.$val['option_name'].'" id="'.$val['option_name'].'" type="'.$val['field_type'].'" size="'.$val['field_size'].'" value="'.${$key}.'" />';
+							}
+                            echo   '<div class="social_discussions_options_box">
+                                        <div class="social_discussions_sub_header_bold"><label for="'.$val['option_name'].'">'.$val['field_name'].'</label><br /></div>
+                                        <div>
+                                            '. $field_html . $helper.'
+                                        </div>
+                                        
+                                    </div>';
+                        }
+                    ?>
+                </fieldset>
+            </div>
+            <!--Save button-->
+            <div class="social_discussions_options_box_save">
+                <input type="hidden" name="laecho_options_facebook" id="laecho_options_facebook" value="true" />
+                <input type="submit" name="option_value" class="button-primary" value="<?php _e('Save Changes'); ?>" />
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--Google Plus-->
+<div class="postbox laecho_postbox">
+    <form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
+        <div class="laecho_holder"><?php _e("Google Plus Options"); ?></div>
+        <div class="laecho_inside">
+            <table>
+                <tr>
+                    <td class="laecho_inside_first">
+                        <a class="social_discussions_header_link social_discussions_header_link_all social_discussions_header_edit"><?php _e("Edit"); ?><input type="hidden" value="edit" /></a>
+                        <a class="social_discussions_header_link social_discussions_header_link_all social_discussions_header_hide" id="social_buttons_google_options"><?php _e("Hide"); ?><input type="hidden" value="hide" /></a>            
+                    </td>
+                    <td class="laecho_inside_second">|</td>
+                    <td>
+                        <?php _e("Set Google Plus specific options."); ?>            
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="social_discussions_header_content">
+            <div class="social_discussions_options_box">
+                <fieldset class="socialdiscussions_fieldset">
+                    <legend><?php _e("Options"); ?></legend>
+                    <?php
+                        foreach($laecho_options_googleplus as $key=>$val) {
+                            $helper = '';
+                            if(!empty($val['field_helper'])) {
+								if($val['field_type'] == 'checkbox') {
+                                	$helper = '<div class="laecho_field_helper_inline">&nbsp;'.$val['field_helper'].'</div>';
+								} else {
+									$helper = '<div class="laecho_field_helper">'.$val['field_helper'].'</div>';
+								}
+                            }
+                            if($val['field_type'] == 'select') {
+                                $field_html  = '<select name="'.$val['option_name'].'" id="'.$val['option_name'].'">';
+                                foreach($val['field_options'] as $field_value=>$field_name) {
+                                    if(${$key} == $field_value) {
+                                        $selected_option = 'selected';
+                                    } else {
+                                        $selected_option = '';
+                                    }
+                                    $field_html .= '<option '.$selected_option.' value="'.$field_value.'">'. $field_name .'</option>';
+                                }
+                                $field_html .= '</select>';
+                            } elseif($val['field_type'] == 'checkbox') {
+								if(${$key} == 1) {
+									$checked_status = 'checked="checked"';
+								} else {
+                                	$checked_status = '';
+                                }
+                                $field_html = '<input name="'.$val['option_name'].'" id="'.$val['option_name'].'" type="'.$val['field_type'].'" size="'.$val['field_size'].'" value="1" '.$checked_status.' />';
+                            } else {
+								$field_html = '<input name="'.$val['option_name'].'" id="'.$val['option_name'].'" type="'.$val['field_type'].'" size="'.$val['field_size'].'" value="'.${$key}.'" />';
+							}
+                            echo   '<div class="social_discussions_options_box">
+                                        <div class="social_discussions_sub_header_bold"><label for="'.$val['option_name'].'">'.$val['field_name'].'</label><br /></div>
+                                        <div>
+                                            '. $field_html . $helper.'
+                                        </div>
+                                        
+                                    </div>';
+                        }
+                    ?>
+                </fieldset>
+            </div>
+            <!--Save button-->
+            <div class="social_discussions_options_box_save">
+                <input type="hidden" name="laecho_options_googleplus" id="laecho_options_googleplus" value="true" />
+                <input type="submit" name="option_value" class="button-primary" value="<?php _e('Save Changes'); ?>" />
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--Twitter-->
+<div class="postbox laecho_postbox">
+    <form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
+        <input type="hidden" name="laecho_options_twitter" id="laecho_options_twitter" value="true" />
+        <div class="laecho_holder"><?php _e("Twitter Options"); ?></div>
+        <div class="laecho_inside">
+            <table>
+                <tr>
+                    <td class="laecho_inside_first">
+                        <a class="social_discussions_header_link social_discussions_header_link_all social_discussions_header_edit"><?php _e("Edit"); ?><input type="hidden" value="edit" /></a>
+                        <a class="social_discussions_header_link social_discussions_header_link_all social_discussions_header_hide" id="social_buttons_twitter_options"><?php _e("Hide"); ?><input type="hidden" value="hide" /></a>            
+                    </td>
+                    <td class="laecho_inside_second">|</td>
+                    <td>
+                        <?php _e("Set Twitter specific options including @mention and related accounts."); ?>            
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="social_discussions_header_content">
+            <div class="social_discussions_options_box">
+                <fieldset class="socialdiscussions_fieldset">
+                    <legend><?php _e("Options"); ?></legend>
+                    <!--Twitter mention-->
+                    <div class="social_discussions_options_box">
+                        <div class="social_discussions_sub_header_bold"><?php _e("Twitter username to associate with the Tweet"); ?>:</div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="laecho-html-twitter-mention"><?php _e("Twitter username"); ?>:</label>            
+                                </td>
+                                <td>
+                                    <input name="laecho-html-twitter-mention" id="laecho-html-twitter-mention" type="text" size="15" value="<?php echo $laecho_opt_twittermention; ?>" ></input>            
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!--Twitter button related-->
+                    <div class="social_discussions_options_box">
+                        <div class="social_discussions_sub_header_bold"><?php _e("Recommended Twitter accounts for users to follow after they share content from your website"); ?>:</div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="laecho-html-twitter-related1"><?php _e("Twitter usernames"); ?>:</label>            
+                                </td>
+                                <td>
+                                    <input name="laecho-html-twitter-related1" id="laecho-html-twitter-related1" type="text" size="15" value="<?php echo $laecho_opt_twitterrelated1; ?>" />            
+                                </td>
+                                <td>
+                                    <input name="laecho-html-twitter-related2" type="text" size="15" value="<?php echo $laecho_opt_twitterrelated2; ?>" />            
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!--Twitter Hashtag-->
+                    <div class="social_discussions_options_box">
+                        <div class="social_discussions_sub_header_bold"><?php _e("Hashtag to be added to status update(Omit the \"#\" symbol and separate multiple hashtags with commas)"); ?>:</div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="laecho-html-twitter-hashtag"><?php _e("Hashtag"); ?>:</label>        
+                                </td>
+                                <td>
+                                    <input name="laecho-html-twitter-hashtag" id="laecho-html-twitter-hashtag" type="text" size="15" value="<?php echo $laecho_opt_twitterhashtag; ?>" ></input>        
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </fieldset>
+            </div>
+            <!--Save button-->
+            <div class="social_discussions_options_box_save">
+                <input type="submit" name="option_value" class="button-primary" value="<?php _e('Save Changes'); ?>" />
+            </div>
+        </div>
+    </form>
+</div>
+<!--Foursquare -->
+<div class="postbox laecho_postbox">
+    <form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
+        <input type="hidden" name="laecho_options_foursquare" id="laecho_options_foursquare" value="true" />
+        <div class="laecho_holder"><?php _e("foursquare Options"); ?></div>
+        <div class="laecho_inside">
+            <table>
+            	<tr>
+                    <td class="laecho_inside_first">
+                        <a class="social_discussions_header_link social_discussions_header_link_all social_discussions_header_edit"><?php _e("Edit"); ?><input type="hidden" value="edit" /></a>
+                        <a class="social_discussions_header_link social_discussions_header_link_all social_discussions_header_hide" id="social_buttons_foursquare_options"><?php _e("Hide"); ?><input type="hidden" value="hide" /></a>            
+                    </td>
+                    <td class="laecho_inside_second">|</td>
+                    <td>
+                        <?php _e("Set foursquare page or location of your business venue to pick up by Visitor."); ?>            
+                    </td>
+                </tr>
+            </table>
+        </div>
+         <div class="social_discussions_header_content">
+            <div class="social_discussions_options_box">
+                <fieldset class="socialdiscussions_fieldset">
+                    <legend><?php _e("Option"); ?></legend>
+                	<!--get foursquare vid  -->
+                	<div class="social_discussions_options_box">
+                        <div class="social_discussions_sub_header_bold"><?php _e("Foursquare venue id associate with Foursquare"); ?>:</div>
+                        <table>
+                            <tr>
+                                <td width="143px">
+                                    <label for="laecho-html-foursquare-vid"><?php _e("Foursquare Venue ID"); ?>:</label>            
+                                </td>
+                                <td>
+                                    <input name="laecho-html-foursquare-vid" id="laecho-html-foursquare-vid" type="text" size="15" value="<?php echo $laecho_opt_foursquare_vid; ?>" />           
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="laecho_field_helper_inline"><?php _e("Note: For the foursquare button/icon to work as expected, it is very important that you provide foursquare Venue ID."); ?></div>
+                        <div class="laecho_field_helper_inline"><?php _e("Example: If your foursquare venue URL is - "); ?><a target="_blank" href="http://foursquare.com/v/foursquare-hq/4ab7e57cf964a5205f7b20e3">http://foursquare.com/v/foursquare-hq/4ab7e57cf964a5205f7b20e3</a>, <?php _e("then you Venue ID will be "); ?><strong>4ab7e57cf964a5205f7b20e3</strong><?php _e("."); ?></div>
+                    </div>
+                 </fieldset>
+            </div>
+            <!--Save button-->
+            <div class="social_discussions_options_box_save">
+                <input type="submit" name="option_value" class="button-primary" value="<?php _e('Save Changes'); ?>" />
+            </div>
+        </div>
+    </form>
+</div>
+<!--end of foursquare option display -->
+
+<!--Follow and Subscribe widget-->
+<div class="postbox laecho_postbox">
+    <form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
+        <input type="hidden" name="laecho_options_follow_subscribe_main" id="laecho_options_follow_subscribe_main" value="true" />
+        <div class="laecho_holder"><?php _e("Follow and Subscribe Sidebar Widget"); ?></div>
+        <div class="laecho_inside">
+            <table>
+            	<tr>
+                    <td class="laecho_inside_first">
+                        <a class="social_discussions_header_link social_discussions_header_link_all social_discussions_header_edit"><?php _e("Edit"); ?><input type="hidden" value="edit" /></a>
+                        <a class="social_discussions_header_link social_discussions_header_link_all social_discussions_header_hide" id="laecho_options_follow_subscribe"><?php _e("Hide"); ?><input type="hidden" value="hide" /></a>            
+                    </td>
+                    <td class="laecho_inside_second">|</td>
+                    <td>
+                        <?php _e("Customize Follow and Subscribe Widget"); ?>            
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="social_discussions_header_content">
+            <div class="social_discussions_options_box">
+            	<fieldset class="socialdiscussions_fieldset" style="margin-bottom: 15px !important;">
+            		<legend><?php _e('Title options'); ?></legend>
+            		<div>
+            			<?php
+            				$i=1;
+            				$fs_title_size='';
+            				$fs_title_help='';
+            				foreach($laecho_sd_fs_title as $key=>$value){
+            					if($i==count($laecho_sd_fs_title)){
+            						$fs_title_class='social_discussions_options_box_fs_last';
+            					}else{
+            						$fs_title_class='social_discussions_options_box_fs';
+            					}
+            					if($value['param_name']=='t_size'){
+            						$fs_title_help = 'px';
+            						$fs_title_size= 'size="4"';
+            					}else{
+            						$fs_title_help = '';
+            						$fs_title_size= '';
+            					}
+            					$html_title .= '<div class="'.$fs_title_class.'"><label style="float:none;display:inline-block;width:125px;" for="'.$value['option_name'].'">'.$value['field_name'].' </label>';
+								$html_title .= '<input type="text" id="'.$value['option_name'].'" '.$fs_title_size.' name="'.$value['option_name'].'" value="'.${$key}.'" />'.$fs_title_help;
+								if($value['help_text']){
+									$html_title .= '<div class="laecho_options_box_option_sub_box_helper" style="padding-top:5px;">'.$value['help_text'].' </div>'; 
+								}
+								$html_title .= '</div>';
+								$i++;
+								
+            				}
+            				echo $html_title;
+            			?>
+            			</div>
+            	</fieldset>
+                <fieldset class="socialdiscussions_fieldset">
+                	<legend><?php _e("Share URL options"); ?></legend>
+                	<!-- Display all the options hrere -->
+                  	<?php 
+                  	$i = 1;
+                  	foreach($laecho_options_follow_subscribe as $key=>$value) {
+                        if(laecho_fs_endsWith($key, 'display_widget')) {
+                  			continue;
+                  		}
+                  		$this_value = $value[option_name];
+                  		$disabled = '';
+                  		if($value['field_type'] == 'checkbox')  {
+                  			$this_value = '1';
+                  			$disabled ="checked='checked'" ."disabled='disabled'";
+                  		}
+                  		$this_div_class = 'social_discussions_options_box_fs';
+                        if($i == count($laecho_options_follow_subscribe)) {
+                        	$this_div_class = 'social_discussions_options_box_fs_last';	
+                        }
+              			$html   = '<div class="'.$this_div_class.'">';
+                        $html  .= '<div class="laecho_options_box_option_title">'.${'icon_'.$value['field_icon']}.'&nbsp;&nbsp;'.$value['field_title'].'</div>';
+              			$this_input_class = 'laecho_options_box_option_sub_box_cb';
+                        if($value['field_type'] == 'text') {
+                            $this_input_class = 'laecho_options_box_option_sub_box_text';
+                        }
+                        $html .= '<div class="laecho_options_box_option_sub_box">';
+                		$html .= '<div class="'.$this_input_class.'"><input type="'.$value['field_type'].'" name="'.$value[option_name].'" '.$disabled.'id="'.$value[option_name].'" value="'.${$key}.'" /></div>';
+                        $html .= '<div class="laecho_options_box_option_sub_box_label"><label for="'.$value[option_name].'" >'.$value['field_name'].'</label></div>';
+                        $html .= '<div class="laecho_clear"></div></div>';
+              			$html .= '<div class="laecho_options_box_option_sub_box_helper">'.($value['help_text']).'</div>';
+                        $html .= '</div>';
+              			echo $html;
+              			$i++;
+                  	}
+                  	?>
+               	</fieldset>
+                <!-- Color optioms-->
+                <fieldset class="socialdiscussions_fieldset" style="margin-top:15px;">
+                	<legend><?php _e("Color and Size"); ?></legend>
+	              	<!-- Display all color options hrere -->
+	              	<?php
+	              	$i = 1;
+					foreach($laecho_options_fs_color as $key=>$value){
+						$this_div_class = 'social_discussions_options_box_fs';
+                        if($i == count($laecho_options_fs_color)) {
+                        	$this_div_class = 'social_discussions_options_box_fs_last';	
+                        }
+						if(strstr($key,'color')){
+							$html_color .= '<div class="'.$this_div_class.'">';
+							$html_color .= '<div class="laecho_fs_color_label_box"><label class="laecho_fs_color_label" for="'.$value[option_name].'">'.$value['field_name'].'</label></div>';
+							$html_color .= '<div class="laecho_clear">&nbsp;</div>';
+							$html_color .= '<div class="laecho_fs_color_play_box"><input class="laecho_fs_color_play" type="text" name="'.$value[option_name].'" id="'.$value[option_name].'" value="'.${$key}.'" /></div>';
+							$html_color .= '<div class="laecho_fs_color_change_box"><div class="laecho_fs_color_change" style="background:'.${$key}.';" id="'.$value[option_name].'_span">&nbsp;</div></div>';
+							$html_color .= '<div class="laecho_clear">&nbsp;</div>';
+							$html_color .= '</div>';
+						} else {
+							$html_size .= '<div class="'.$this_div_class.'">';
+							$html_size .= '<div class="laecho_fs_color_label_box"><label class="laecho_fs_color_label" for="'.$value[option_name].'">'.$value['field_name'].'</label></div>';
+							$html_size .= '<div class="laecho_clear">&nbsp;</div>';
+							$html_size .= '<div class="laehco_fs_color_play_box">';
+						 	if($value["field_type"]=="select"){
+								$html_size .= '<select name="'.$value[option_name].'" id="'.$value[option_name].'">';
+								foreach($value['field_options'] as $value) {
+									if($value == $laecho_opt_fs_size) {
+										$html_size .= '<option value="'.$value.'" selected="selected">'.$value.'px</option>';	
+									} else {
+										$html_size .= '<option value="'.$value.'">'.$value.'px</option>';
+									}
+								}			    
+								$html_size .= ' </select></div>';
+							} else {
+								$html_size .= '<div class="laehco_fs_color_play_box"><input  type="text" size="4" name="'.$value[option_name].'" id="'.$value[option_name].'" value="'.${$key}.'" />px.</div>';
+							}
+							$html_size .= '<div class="laecho_clear">&nbsp;</div>';
+							$html_size .= '</div>';
+					 	}	
+					 	$i++;
+					 }	
+					 echo $html_color;
+					 echo $html_size;
+					?>
+	            </fieldset>
+	            <fieldset class="socialdiscussions_fieldset" style="margin-top:15px;">
+                	<legend><?php _e("Show/Hide Widget"); ?></legend>
+	            	<div style="padding: 10px;"> <?php _e('To add or remove this widget, please navigate to the Appearance > Widgets menu on your WordPress Admin console.')?> </div>
+	            </fieldset>
+			</div>
+        	<div class="social_discussions_options_box_save">
+				<input type="submit" name="option_value" class="button-primary" value="<?php _e('Save Changes'); ?>" />
+	        </div>
+		</div>
+    </form>
+</div>
+<!-- End of Follow and Subscribe widget-->
+
+<!--Display Pages-->
+<div class="postbox laecho_postbox">
+    <form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
+        <input type="hidden" name="laecho_options_display_pages" value="true" />
+        <div class="laecho_holder"><?php _e("Display Pages"); ?></div>
+        <div class="laecho_inside">
+            <table>
+                <tr>
+                    <td class="laecho_inside_first">
+                        <a class="social_discussions_header_link social_discussions_header_link_all social_discussions_header_edit"><?php _e("Edit"); ?><input type="hidden" value="edit" /></a>
+                        <a class="social_discussions_header_link social_discussions_header_link_all social_discussions_header_hide" id="social_buttons_display_pages"><?php _e("Hide"); ?><input type="hidden" value="hide" /></a>            
+                    </td>
+                    <td class="laecho_inside_second">|</td>
+                    <td>
+                        <?php _e("Select the WordPress page types on which the buttons will be shown on your website."); ?>            
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="social_discussions_header_content">
+            <div class="social_discussions_options_box">
+                <fieldset class="socialdiscussions_fieldset">
+                    <legend><?php _e("Page Types"); ?></legend>
+                    <!--Select Pages-->
+                    <div class="social_discussions_options_box">
+                        <div class="social_discussions_sub_header"><?php _e("Select WordPress Page types to display the buttons on"); ?></div>
+                        <div class="social_discussions_sub_options">
+                            <?php
+                                foreach($laecho_options_display_pages as $key=>$val) {
+                                        if(${$key} == 1) {
+                                            $checked_status = 'checked="checked"';
+                                        } else {
+                                            $checked_status = '';
+                                        }
+                                        echo   '<div>
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <input name="'.$val['option_name'].'" id="'.$val['option_name'].'" type="checkbox" value="1" '.$checked_status.' />
+                                                            </td>
+                                                            <td>
+                                                                <label for="'.$val['option_name'].'">&nbsp;&nbsp;'.ucfirst($val['field_name']).'</label>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>';
+                                }
+                            ?>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <!--Save button-->
+            <div class="social_discussions_options_box_save">
+                <input type="submit" name="option_value" class="button-primary" value="<?php _e('Save Changes'); ?>" />
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--Disable Warning-->
+<div class="postbox laecho_postbox">
+    <form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
+        <div class="laecho_holder"><?php _e("Disable Warning"); ?></div>
+        <div style="padding-top: 5px;">
+            <div class="social_discussions_options_box">
+                <fieldset class="socialdiscussions_fieldset">
+                    <legend><?php _e("Disable Warning Message"); ?></legend>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input name="laechonw-html-warning-msg" id="laechonw-html-warning-msg" type="checkbox" <?php if($laechonw_opt_warning_msg != "0") echo 'checked="checked"'; ?> value="1" />
+                                </td>
+                                <td>
+                                    <label for="laechonw-html-warning-msg">&nbsp;<?php _e("Check to disable warning message: 'Social Discussions plugin is almost ready'."); ?></label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </fieldset>    
+            </div>
+            <div class="social_discussions_options_box_save">
+                <input type="hidden" name="laecho_options_warning_message" id="laecho_options_warning_message" value="true" />
+                <input type="submit" name="option_value" class="button-primary" value="<?php _e( 'Disable' ); ?>" />
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--Suggestion-->
+<div class="postbox laecho_postbox">
+    <div class="laecho_holder"><?php _e("Your Suggestions"); ?></div>
+    <div class="laecho_inside">
+        <table>
+            <tr>
+                <td>
+                    <div style="font-size: 12px;"><?php _e("Email us at"); ?> <a href="mailto:discuss@linksalpha.com">discuss@linksalpha.com</a> <?php _e("if you would like a particular functionality or have any recommendations."); ?></div>            
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
